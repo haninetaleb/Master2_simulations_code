@@ -15,7 +15,7 @@ Three scenarios are evaluated:
 |----------|------------------------------------|--------------------|
 | S1       | Normal operation, no attack        | None               |
 | S2       | Single black hole node             | Node N5            |
-| S3       | Three cooperative black hole nodes | Nodes N5, N12, N18 |
+| S3       | Three independent black hole nodes | Nodes N5, N12, N18 |
 
 Each scenario runs across 10 independent seeds and reports 7 performance metrics.
 
