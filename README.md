@@ -202,15 +202,15 @@ grep -c "m_blackhole" src/aodv/model/aodv-routing-protocol.cc
 
 ## Performance Metrics
 
-| Metric               | Formula                              |
-|----------------------|--------------------------------------|
-| PDR                  | Rx / Tx x 100%                       |
-| PLR                  | (Tx - Rx) / Tx x 100%                |
-| E2E Delay            | delaySum / Rx (ms)                   |
-| Throughput           | rxBytes x 8 / 100s (kbps)            |
-| Route Discovery Time | timeFirstRxPacket - 15.0 (s)         |
-| BH Drops             | Tx - Rx (packets)                    |
-| Routing Overhead     | AODV control packets (port 654) / Rx |
+| Metric               | Formula                                               |
+|----------------------|-------------------------------------------------------|
+| PDR                  | Rx / Tx x 100%                                        |
+| PLR                  | (Tx - Rx) / Tx x 100%                                 |
+| E2E Delay            | delaySum / Rx (ms)                                    |
+| Throughput           | rxBytes x 8 / 100s (kbps)                             |
+| Route Discovery Time | timeFirstRxPacket - 15.0 (s)                          |
+| BH Drops             | Lost Packets after BH - Originally lost packets (pkts)|
+| Routing Overhead     | AODV control packets (port 654) / Rx                  |
 
 All metrics are extracted from NS-3 FlowMonitor output at the end of each run. Results are averaged across 10 seeds.
 
