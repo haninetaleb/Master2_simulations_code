@@ -30,7 +30,7 @@ Each scenario runs across 10 independent seeds and reports 7 performance metrics
 | Avg E2E Delay (ms)       | 24.89     | 28.22     | 71.73     | 
 | Throughput (kbps)        | 7.29      | 5.20      | 4.86      |
 | Route Discovery Time (s) | 1.21      | 6.03      | 4.46      |
-| BH Packets Dropped       | 0         | 79.7      | 87.5      |
+| BH Packets Dropped       | 0         | 54.7      | 60.4      |
 | Routing Overhead         | 3.36      | 5.79      | 4.15      |
 
 **Key finding:** A single black hole node (3.3% of the network) drops PDR by 24.2 percentage points. Adding two more attackers produces only 3.9 pp additional degradation due to traffic saturation.
